@@ -6,7 +6,7 @@ from transformers import BertTokenizer, BertForSequenceClassification
 
 class transformers:
 
-    model = BertForSequenceClassification.from_pretrained("./", local_files_only=True)
+    model = BertForSequenceClassification.from_pretrained("bert-base-uncased", local_files_only=True)
     tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
     label_map = {0: 'fear', 1: 'joy', 2: 'sadness', 3: 'anger', 4: 'surprise', 5: 'neutral', 6: 'disgust'}
